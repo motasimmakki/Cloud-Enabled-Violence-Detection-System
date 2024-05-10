@@ -24,8 +24,8 @@ def capture_video(file_path, duration = 3):
 		camera.stop_recording()
 
 def upload_to_s3(file_path, bucket_name, object_name):
-	aws_access_key_id = "AKIA6KGA7GO62DXDR5F6"
-	aws_secret_access_key = "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"
+	aws_access_key_id = "---" # Add Access-Key from AWS account here.
+	aws_secret_access_key = "---" # Add Secret-Access-Key from AWS account here.
 	s3 = boto3.client('s3', aws_access_key_id = aws_access_key_id, aws_secret_access_key = aws_secret_access_key)
 
 	try:
